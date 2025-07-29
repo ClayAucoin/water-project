@@ -28,3 +28,5 @@ document.getElementById("glass-bottle").addEventListener("click", () => {
     playSound("audio/pacman-death.mp3", false, 1.0);
 });
 
+
+// comment
