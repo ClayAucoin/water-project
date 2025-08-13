@@ -12,25 +12,40 @@
     <title>Water Conservation Project</title>
 </head>
 <body>
-    <div class="container-fluid text-center">
-        <div class="row">
-            <h1>Water Conservation Tips</h1>
-            <p>It's impotrant that we all do our part to<br>
-            use less water. Click through this app<br>
-            for tips for conservation iseas</p>
-            <img class="img-fluid" src="water-in-glass.jpg" alt="Water pouring in glass">
-        </div>
-        <div class="row border">
-            <div class="col text-start">
-                <button type="button" class="btn btn-primary">Spanish</button>
-            </div>
-        </div>
-        <div class="row border">
-            <div class="col text-start">
-                <button type="button" class="btn btn-primary">English</button>
-            </div>
-            <div class="col text-end">
-                <button type="button" class="btn btn-primary">Spanish</button>
+    <!-- Page wrapper fills the viewport -->
+    <div class="min-vh-100 d-flex flex-column">
+
+        <!-- Main content area (grows) -->
+        <div class="container flex-grow-1 d-flex">
+            <div class="row justify-content-center w-100">
+                <!-- One centered column controls max width for BOTH image and buttons -->
+                <div class="col-12 col-md-10 col-lg-8 d-flex flex-column py-4">
+
+                    <h2 class="text-center">Water Conservation Tips</h2>
+                    <p class="text-center">
+                        It's important that we all do our part to use less water. Click through this app
+                        for tips for conservation ideas.
+                    </p>
+
+                    <img src="water-in-glass.jpg" alt="Glass of water" class="img-fluid my-4">
+
+                    <!-- Spacer pushes the button bar down when there’s extra height -->
+                    <div class="flex-grow-1"></div>
+
+                    <!-- Button bar: stays within the same column width as the image -->
+                    <div class="d-flex justify-content-between" style="min-height: 80px;">
+                    <!-- Left buttons stacked -->
+                    <div class="d-flex flex-column">
+                        <button class="btn btn-primary mb-2">Spanish</button>
+                        <button class="btn btn-primary">English</button>
+                    </div>
+
+                    <!-- Right button pinned to bottom -->
+                    <div class="d-flex flex-column justify-content-end">
+                        <button class="btn btn-success align-self-end">Next</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
