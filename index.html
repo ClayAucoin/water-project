@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <script>
+        const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+        const baseHref = isLocal ? '/' : '/water-project/';
+        document.write(`<base href="${baseHref}">`);
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
@@ -14,6 +19,7 @@
 
 <body>
     <div class="container text-center py-4">
+        <h2 id="title">Water Conservation Tips</h2>
         <h2 id="title">Water Conservation Tips</h2>
         <p id="subtitle">It's important that we all do our part to use less water. Click through this app for tips for
             conservation ideas.</p>
