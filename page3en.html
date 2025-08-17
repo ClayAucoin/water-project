@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title id="pageTitle">Water Conservation Project</title>
+</head>
+
+<body>
+    <div class="container py-4">
+        <p id="subTitle">Another way to conserve water is to take shorter showers. Try setting a timer to five minutes!
+        </p>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="position-relative d-inline-block" id="timerWrap">
+                    <img id="shower-duck" src="shower-duck.jpg" alt="Duck taking a shower" class="d-block img-fluid"
+                        style="opacity: 1;">
+
+                    <img id="rubber-duck" src="rubber-duck.png" alt="Rubber duck"
+                        class="pointer-events position-absolute top-0 start-0 w-100 h-100" style="opacity:0;">
+                </div>
+            </div>
+            <div class="col-6 text-end">
+                <p>Click on the timer</p>
+                <div class="position-relative d-inline-block" id="timerWrap">
+                    <img id="timer" src="timer.png" alt="Timer set at five minutes" class="d-block img-fluid"
+                        style="opacity: 1;">
+
+                    <img id="times-up" src="times-up.png" alt="Timer with no minutes left"
+                        class="pointer-events position-absolute top-0 start-0 w-100 h-100" style="opacity:0;">
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-column justify-content-end">
+            <a id="nextButton" class="btn btn-success align-self-end" href="index.html" role="button">Home</a>
+        </div>
+    </div>
+    <script src="helpers.js"></script>
+    <script src="page3en.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
