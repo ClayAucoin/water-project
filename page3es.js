@@ -10,8 +10,6 @@ document.getElementById("shower-duck").addEventListener("click", () => {
     document.getElementById("shower-duck").style.opacity = 0;
     document.getElementById("rubber-duck").style.opacity = 1;
     document.getElementById("rubber-duck").style.pointerEvents = "auto";
-
-    // playMySound("pacman-death.mp3", false, 0.4);
 });
 
 document.getElementById("rubber-duck").addEventListener("click", () => {
