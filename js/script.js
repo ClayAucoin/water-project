@@ -7,3 +7,4 @@ function playMySound(src, loop = false, volume = 1.0) {
     sound.play();
     return sound;
 }
+

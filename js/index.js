@@ -1,5 +1,12 @@
+_esButton.addEventListener("click", function () {
+    setText(pageTitle, "Proyecto de Conservación del Agua");
+});
 
-esButton.addEventListener("click", function() {
+_onEvent("esButton", "click", function () {
+    setText(pageTitle, "Proyecto de Conservación del Agua");
+});
+
+esButton.addEventListener("click", function () {
     document.getElementById("pageTitle").textContent = "Proyecto de Conservación del Agua";
     document.getElementById("title").innerHTML = "Consejos de Conservación<br>del Agua";
     document.getElementById("subtitle").innerHTML = "Es importante que todos hagamos nuestra parte para<br>usar menos agua. Haz clic en esta aplicación para<br>obtener ideas sobre conservación.";
@@ -8,7 +15,7 @@ esButton.addEventListener("click", function() {
     document.getElementById("water-in-glass").setAttribute("alt", "Vaso de agua");
 });
 
-enButton.addEventListener("click", function() {
+enButton.addEventListener("click", function () {
     document.getElementById("pageTitle").textContent = "Water Conservation Project";
     document.getElementById("title").textContent = "Water Conservation Tips";
     document.getElementById("subtitle").textContent = "It's important that we all do our part to use less water. Click through this app for tips for conservation ideas.";
@@ -16,3 +23,4 @@ enButton.addEventListener("click", function() {
     document.getElementById("nextButton").textContent = "Next";
     document.getElementById("water-in-glass").setAttribute("alt", "Glass of water");
 });
+
