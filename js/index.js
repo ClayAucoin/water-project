@@ -1,11 +1,5 @@
-_esButton.addEventListener("click", function () {
-    setText(pageTitle, "Proyecto de Conservación del Agua");
-});
 
-_onEvent("esButton", "click", function () {
-    setText(pageTitle, "Proyecto de Conservación del Agua");
-});
-
+var esButton = document.getElementById("esButton")
 esButton.addEventListener("click", function () {
     document.getElementById("pageTitle").textContent = "Proyecto de Conservación del Agua";
     document.getElementById("title").innerHTML = "Consejos de Conservación<br>del Agua";
@@ -15,6 +9,7 @@ esButton.addEventListener("click", function () {
     document.getElementById("water-in-glass").setAttribute("alt", "Vaso de agua");
 });
 
+var enButton = document.getElementById("enButton")
 enButton.addEventListener("click", function () {
     document.getElementById("pageTitle").textContent = "Water Conservation Project";
     document.getElementById("title").textContent = "Water Conservation Tips";
@@ -23,4 +18,5 @@ enButton.addEventListener("click", function () {
     document.getElementById("nextButton").textContent = "Next";
     document.getElementById("water-in-glass").setAttribute("alt", "Glass of water");
 });
+
 
