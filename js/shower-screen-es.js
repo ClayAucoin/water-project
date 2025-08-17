@@ -13,5 +13,5 @@ document.getElementById("shower-duck").addEventListener("click", () => {
 });
 
 document.getElementById("rubber-duck").addEventListener("click", () => {
-    playMySound("audio/water-bubbles.mp3", false, 1.0);
+    playMySound("audio/water-bubbles.mp3", false, 0.4);
 });

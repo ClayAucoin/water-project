@@ -1,8 +1,8 @@
 
 esButton.addEventListener("click", function() {
     document.getElementById("pageTitle").textContent = "Proyecto de Conservación del Agua";
-    document.getElementById("title").textContent = "Consejos de Conservación del Agua";
-    document.getElementById("subtitle").textContent = "Es importante que todos hagamos nuestra parte para usar menos agua. Haz clic en esta aplicación para obtener ideas sobre conservación.";
+    document.getElementById("title").innerHTML = "Consejos de Conservación<br>del Agua";
+    document.getElementById("subtitle").innerHTML = "Es importante que todos hagamos nuestra parte para<br>usar menos agua. Haz clic en esta aplicación para<br>obtener ideas sobre conservación.";
     document.getElementById("nextButton").setAttribute("href", "water-bottle-screen-es.html");
     document.getElementById("nextButton").textContent = "Siguiente";
     document.getElementById("water-in-glass").setAttribute("alt", "Vaso de agua");
