@@ -3,7 +3,7 @@ document.getElementById("timer").addEventListener("click", () => {
     document.getElementById("timer").style.opacity = 0;
     document.getElementById("times-up").style.opacity = 1;
 
-    playMySound("ding-cartoon.mp3", false, 0.4);
+    playMySound("audio/ding-cartoon.mp3", false, 0.4);
 });
 
 document.getElementById("shower-duck").addEventListener("click", () => {
@@ -13,5 +13,5 @@ document.getElementById("shower-duck").addEventListener("click", () => {
 });
 
 document.getElementById("rubber-duck").addEventListener("click", () => {
-    playMySound("water-bubbles.mp3", false, 1.0);
+    playMySound("audio/water-bubbles.mp3", false, 1.0);
 });
