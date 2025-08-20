@@ -19,4 +19,3 @@ enButton.addEventListener("click", function () {
     document.getElementById("water-in-glass").setAttribute("alt", "Glass of water");
 });
 
-

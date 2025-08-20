@@ -23,7 +23,8 @@ function onEvent(id, event, handler) {
       console.warn("onEvent: Element with id '" + id + "' not found.");
       return;
     }
-    el.addEventListener(event, handler);
+    el.addEventListener(event, function(e) { handler(e); });
+
     console.info("onEvent: Listening for '" + event + "' on #" + id);
   }
   
@@ -114,6 +115,7 @@ function onEvent(id, event, handler) {
       console.warn("setValue: Input with id '" + id + "' not found.");
       return;
     }
+    // @ts-ignore
     el.value = value;
     console.info("setValue: #" + id + " → \"" + value + "\"");
   }
@@ -132,6 +134,7 @@ function onEvent(id, event, handler) {
       console.warn("getValue: Input with id '" + id + "' not found.");
       return null;
     }
+    // @ts-ignore
     return el.value;
   }
   
@@ -149,6 +152,7 @@ function onEvent(id, event, handler) {
       console.warn("setImageURL: Image with id '" + id + "' not found.");
       return;
     }
+    // @ts-ignore
     el.src = url;
     console.info("setImageURL: #" + id + " → " + url);
   }
