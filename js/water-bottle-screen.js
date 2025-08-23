@@ -10,6 +10,7 @@ if(language == "es"){
 }
 
 
+
 document.getElementById("plastic-bottle").addEventListener("click", () => {
     document.getElementById("ban").style.opacity = "1";
     document.getElementById("glass-bottle").style.opacity = "1";
