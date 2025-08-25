@@ -4,10 +4,10 @@ var language = getLang.get('lang');
 
 if(language == "es"){
     document.getElementById("title").innerHTML = "Consejos de Conservación<br>del Agua";
-    document.getElementById("subTitle").innerHTML = "En lugar de comprar botellas de agua desechables, usa una botella reutilizable. Las botellas de un solo uso llenan los vertederos y desperdician agua valiosa.";
+`    document.getElementById("subTitle").innerHTML = "En lugar de comprar botellas de agua desechables, usa una botella reutilizable. Las botellas de un solo uso llenan los vertederos y desperdician agua valiosa.";
     document.getElementById("instruction").innerHTML = "Elige la botella de agua correcta.<br>Luego, haz clic en el grifo para llenarla.";
     document.getElementById("nextButton").setAttribute("href", "shower-screen.html?lang=es");
-}
+`}
 
 
 
@@ -26,4 +26,5 @@ document.getElementById("glass-bottle").addEventListener("click", () => {
 
     // playMySound("audio/success.mp3", false, 0.4);
 });
+
 
