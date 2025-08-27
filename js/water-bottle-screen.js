@@ -13,8 +13,7 @@ document.getElementById("plastic-bottle").addEventListener("click", () => {
     document.getElementById("ban").style.opacity = "1";
     document.getElementById("glass-bottle").style.opacity = "1";
     document.getElementById("bottle-under-faucet").style.opacity = "0";
-    document.getElementById('nextButton').classList.add('disabled');
-
+    disableButton("nextButton", true);
 
     // playMySound("audio/pacman-death.mp3", false, 0.4);
 });
@@ -23,9 +22,8 @@ document.getElementById("glass-bottle").addEventListener("click", () => {
     document.getElementById("ban").style.opacity = "0";
     document.getElementById("glass-bottle").style.opacity = "0";
     document.getElementById("bottle-under-faucet").style.opacity = "1";
-    document.getElementById('nextButton').classList.remove('disabled');
+    disableButton("nextButton", false);
 
     // playMySound("audio/success.mp3", false, 0.4);
 });
-
 
