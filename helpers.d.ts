@@ -10,7 +10,7 @@ declare function onEvent(id: string, event: string, handler: EventListenerOrEven
 
 declare function setProperty(id: string, property: CssProperty, value: string | number): void;
 
-declare function playSound(url: string, loop?: boolean): void;
+declare function playSound(url: string, loop?: boolean, volume?: number): void;
 
 declare function setText(id: string, text: string): void;
 
