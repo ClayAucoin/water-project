@@ -215,4 +215,3 @@ function disableButton(id, status) {
     el.classList.remove('disabled');
   }
 }
-
