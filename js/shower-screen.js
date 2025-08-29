@@ -6,6 +6,7 @@ if(language == "es"){
     document.getElementById("title").innerHTML = "Consejos de Conservación<br>del Agua";
     document.getElementById("subTitle").innerHTML = "Otra forma de ahorrar agua es tomar duchas más cortas. ¡Prueba a programar un temporizador de cinco minutos!";
     document.getElementById("instruction").innerHTML = "Haz clic en el temporizador";
+    document.getElementById("nextButton").textContent = "Inicio";
 }
 
 

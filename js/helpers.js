@@ -1,4 +1,4 @@
-console.log("Helpers here.");
+// console.log("Helpers here.");
 
 /**
  * helpers.js
@@ -61,19 +61,19 @@ function setProperty(id, property, value) {
  * playSound("beep.mp3");
  */
 function playSound(src, loop = false, volume = 1.0) {
-    if (!src) {
-        console.warn("playSound: No SRC provided.");
-        return;
-    };
-    const audio = new Audio(src);
-    audio.loop = loop;
-    audio.volume = volume;   // 0.0 = silent, 1.0 = full
-    audio.currentTime = 0;
-    audio.play();
-    console.info("playSound: Playing " + src +
-        (loop ? " (looping)" : "") +
-        (volume !== undefined ? ` (volume=${volume})` : "")
-    );
+  if (!src) {
+    console.warn("playSound: No SRC provided.");
+    return;
+  };
+  const audio = new Audio(src);
+  audio.loop = loop;
+  audio.volume = volume;   // 0.0 = silent, 1.0 = full
+  audio.currentTime = 0;
+  audio.play();
+  console.info("playSound: Playing " + src +
+    (loop ? " (looping)" : "") +
+    (volume !== undefined ? ` (volume=${volume})` : "")
+  );
 }
 
 
@@ -190,10 +190,10 @@ function visibleElement(id, status) {
   } else {
     if (status == true) {
       el.classList.remove("d-none");
-      console.info("visibleElement: Element with id '" + id + "' is shown.");
+      console.info("visibleElement: Element with id '" + id + "' has been shown.");
     } else {
       el.classList.add("d-none");
-      console.info("visibleElement: Element with id '" + id + "' is hidden.");
+      console.info("visibleElement: Element with id '" + id + "' has been hidden.");
     }
   }
 }
@@ -211,7 +211,9 @@ function disableButton(id, status) {
   const el = document.getElementById(id)
   if (status == true) {
     el.classList.add('disabled');
+    console.info("disableButton: Element with id '" + id + "' has been disabled.");
   } else {
     el.classList.remove('disabled');
+    console.info("disableButton: Element with id '" + id + "' has been enabled.");
   }
 }

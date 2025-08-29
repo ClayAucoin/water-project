@@ -3,9 +3,13 @@
 
 <head>
     <script>
-        const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-        const baseHref = isLocal ? '/' : '/water-project/';
-        document.write(`<base href="${baseHref}">`);
+        (function () {
+            const isLocal = ['localhost', '127.0.0.1', '::1'].includes(location.hostname);
+            const baseHref = isLocal ? '/' : '/water-project/';
+            const base = document.createElement('base');
+            base.setAttribute('href', baseHref);
+            document.head.prepend(base); // insert as the first element in <head>
+        })();
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
