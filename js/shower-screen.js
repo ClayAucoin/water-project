@@ -13,7 +13,6 @@ document.getElementById("timer").addEventListener("click", () => {
     document.getElementById("timer").style.opacity = "0";
     document.getElementById("times-up").style.opacity = "1";
 
-    // playMySound("audio/ding-cartoon.mp3", false);
     playSound("audio/ding-cartoon.mp3", false, 0.2);
 });
 
