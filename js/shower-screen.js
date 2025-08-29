@@ -14,7 +14,7 @@ document.getElementById("timer").addEventListener("click", () => {
     document.getElementById("times-up").style.opacity = "1";
 
     // playMySound("audio/ding-cartoon.mp3", false);
-    playSound("audio/ding-cartoon.mp3", false, 0.4);
+    playSound("audio/ding-cartoon.mp3", false, 0.2);
 });
 
 document.getElementById("shower-duck").addEventListener("click", () => {
@@ -24,5 +24,5 @@ document.getElementById("shower-duck").addEventListener("click", () => {
 });
 
 document.getElementById("rubber-duck").addEventListener("click", () => {
-    playSound("audio/water-bubbles.mp3", false, 0.4);
+    playSound("audio/water-bubbles.mp3", false, 0.2);
 });
